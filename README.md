@@ -6,9 +6,9 @@
 |password|string|null: false|
 
 ### Association
-- has_many :
+- has_many :users_groups
 - has_many :messages
-- has_many  :gruops,  through:  :users_groups
+- has_many :gruops,  through:  :users_groups
 
 ## users-groupsテーブル
 |Column|Type|Options|
