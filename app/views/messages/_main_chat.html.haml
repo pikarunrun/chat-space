@@ -1,0 +1,39 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__left
+      .chat-main__header__left-box
+        aaaaaaa
+      .chat-main__header__left-box-text
+        %ul.chat-main__header__left-box-text-member member :
+        %li.chat-main__header__left-box-text-member-list hikaru
+        
+    .chat-main__header__right
+      = link_to "#" do
+        Edit    
+  .chat-main__message
+    .chat-main__message-case
+      %a.chat-main__message-case-list
+        masa
+      %b.chat-main__message-case-list-date
+        2020/3/28(sat) 13:14:45
+    %p.chat-main__message-case-comment
+      おはよう
+
+    .chat-main__message-case
+      %a.chat-main__message-case-list
+        masa
+      %b.chat-main__message-case-list-date
+        2020/3/28(sat) 13:19:09
+    .chat-main__message-case-comment
+      今日の夜は雨だ
+
+  .form
+    .form__box
+      type a message
+      .form__box-left
+        .form__box-left-box-photo-text
+          %label{class: "input-box__image" }
+            = icon('fa', 'image')
+            %input{type: "file", class:"delete" }
+    .form__box-right
+      Send
