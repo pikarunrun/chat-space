@@ -3,7 +3,6 @@
     .side-bar__header-box
       = current_user.name
       .side-bar__header-box-left
-        hikaru
       .side-bar__header-box-right
         = link_to new_group_path, class:"icon" do
           = icon('fa', 'edit')
@@ -13,9 +12,10 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .group
-        = link_to "#" do
+        = link_to group_messages_path(group) do
           .side-bar__group-list__box
             .side-bar__group-list__box__name 
               = group.name
             .side-bar__group-list__box__comment 
-              メッセージはまだありません
+              = group.show_last_message
+          
