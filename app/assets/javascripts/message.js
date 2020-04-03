@@ -54,7 +54,7 @@ $('#new_message').on('submit', function(e){
     $('.chat-main__message').append(html);
     $('form')[0].reset();
     $('.box').animate({'height' : '200px'});
-    // $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+    $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
     $('.form__box-submit').prop('disabled', false);
   })
   .fail(function() {
