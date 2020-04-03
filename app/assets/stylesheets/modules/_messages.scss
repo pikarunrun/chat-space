@@ -57,6 +57,7 @@
       height: calc(100vh - 100px - 90px);
       background-color: #fafafa;
       padding: 40px;
+      overflow: scroll;
       &-case {
         &-list {
           width: calc(100vw - 300px);
@@ -122,6 +123,7 @@
           background-color: white;
           top: 10px;
           right: 10px;
+          padding-right: 10px;
           cursor: pointer;
           .form__box-image__text {
             display: none;
@@ -178,6 +180,7 @@
       background-color: #2f3e51;
       width: 300px;
       height: calc(100vh - 100px);
+      overflow: scroll;
       &__box {
         height: 65px;
         width: 300px;
