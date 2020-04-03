@@ -63,16 +63,16 @@
           font-size: 16px;
           color: #333333;
           font-weight: bold;
-        &-date {
-          font-size: 12px;
-          color: #999999;
+          &-date {
+            font-size: 1px;
+            color: #999999;
           }
         }
-      &-comment {
-        color: #434a54;
-        font-size: 14px;
-        padding-bottom: 40px;
-        padding-top: 15px;
+        &-comment {
+          color: #434a54;
+          font-size: 14px;
+          padding-bottom: 40px;
+          padding-top: 15px;
          }
       }
     }
